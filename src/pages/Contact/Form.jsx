@@ -40,7 +40,7 @@ const Form = () => {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:4567/comments", {
+      let res = await fetch("https://portfolio-backend-fjkx.onrender.com/comments", {
         method: "POST",
         body: JSON.stringify({username, email, comment}),
         headers: {

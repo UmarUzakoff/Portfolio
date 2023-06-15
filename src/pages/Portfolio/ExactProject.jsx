@@ -35,7 +35,7 @@ const ExactProject = () => {
   ///---GET---///
 
   const fetchUserData = () => {
-    fetch(`http://localhost:4567/projects/${id}`)
+    fetch(`https://portfolio-backend-fjkx.onrender.com/projects/${id}`)
       .then((response) => {
         return response.json();
       })
@@ -51,7 +51,7 @@ const ExactProject = () => {
   ///---DELETE---///
 
   let handleDeleteProject = () => {
-    fetch(`http://localhost:4567/admin/deleteProject/${id}`, {
+    fetch(`https://portfolio-backend-fjkx.onrender.com/admin/deleteProject/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ const ExactProject = () => {
       formData.append("description", description);
       formData.append("usedTechnologies", usedTechnologies);
 
-      let res = await fetch(`http://localhost:4567/admin/editProject/${id}`, {
+      let res = await fetch(`https://portfolio-backend-fjkx.onrender.com/admin/editProject/${id}`, {
         method: "PUT",
         body: formData,
         headers: { Authorization: `Bearer ${token}` },
@@ -152,7 +152,7 @@ const ExactProject = () => {
               theme === "light" ? "hover:bg-light1/50" : "hover:bg-dark1"
             }`}>
             <img
-              src={`http://localhost:4567/uploads/${project.image}`}
+              src={`https://portfolio-backend-fjkx.onrender.com/uploads/${project.image}`}
               alt={`${project.name}`}
               className="w-full h-48 pb-0 mb-0 border-b-4 border-blue "
             />

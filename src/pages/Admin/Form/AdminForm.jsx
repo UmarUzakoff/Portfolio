@@ -43,7 +43,7 @@ const AdminForm = () => {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:4567/admin/login", {
+      let res = await fetch("https://portfolio-backend-fjkx.onrender.com/admin/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

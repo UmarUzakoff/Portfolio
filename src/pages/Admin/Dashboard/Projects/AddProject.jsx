@@ -53,7 +53,7 @@ const AddProjectToPortfolio = () => {
       formData.append("image", image);
 
       let res = await fetch(
-        "http://localhost:4567/admin/dashboard/postProject",
+        "https://portfolio-backend-fjkx.onrender.com/admin/dashboard/postProject",
         {
           method: "POST",
           body: formData,

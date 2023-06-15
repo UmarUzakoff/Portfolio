@@ -11,7 +11,7 @@ const MyProjects = () => {
   const [projects, setProjects] = useState([]);
 
   const fetchUserData = () => {
-    fetch("http://localhost:4567/projects")
+    fetch("https://portfolio-backend-fjkx.onrender.com/projects")
       .then((response) => {
         return response.json();
       })
@@ -37,7 +37,7 @@ const MyProjects = () => {
               }`}
               href="#">
               <img
-                src={`http://localhost:4567/uploads/${project.image}`}
+                src={`https://portfolio-backend-fjkx.onrender.com/uploads/${project.image}`}
                 alt={`${project.name}`}
                 className="w-full h-48 pb-0 mb-0 border-b-4 border-blue "
               />

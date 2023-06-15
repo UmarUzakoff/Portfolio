@@ -33,7 +33,7 @@ const MessagesFromUsers = () => {
   const fetchUserData = () => {
     const token = getAccessTokenFromLocalStorage();
     const headers = { 'Authorization': `Bearer ${token}` };
-    fetch("http://localhost:4567/admin/dashboard/messages", { headers })
+    fetch("https://portfolio-backend-fjkx.onrender.com/admin/dashboard/messages", { headers })
       .then((response) => {
         return response.json();
       })
