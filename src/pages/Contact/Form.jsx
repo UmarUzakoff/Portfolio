@@ -1,24 +1,30 @@
 import React, { useContext, useState } from "react";
 import { LocalizationApi } from "../../context/localizationContext";
 // import { ThemeApi } from "../../context/themeContext";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import {
-  FaRegComment,
-  FaRegEnvelope,
-  FaRegUser,
-} from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaRegComment, FaRegEnvelope, FaRegUser } from "react-icons/fa";
 import Button from "../../utils/Button";
 
 const Form = () => {
   // const { theme } = useContext(ThemeApi);
   const { setLanguage, language } = useContext(LocalizationApi);
 
-  let text = {
-    uz: "XABARNI YUBORISH",
-    ru: "ОТПРАВИТЬ СООБЩЕНИЕ",
-    en: "SEND MESSAGE",
-  };
+  ////-------------------LOADING--------------------
+
+  const [loading, setLoading] = useState(false);
+
+  let text = loading
+    ? {
+        uz: "Yuborilmoqda...",
+        ru: "Отправка...",
+        en: "Loading...",
+      }
+    : {
+        uz: "XABARNI YUBORISH",
+        ru: "ОТПРАВИТЬ СООБЩЕНИЕ",
+        en: "SEND MESSAGE",
+      };
 
   ////////-----------FORM--------------------------------
   const [username, setUsername] = useState("");
@@ -28,31 +34,40 @@ const Form = () => {
   let notifySuccess = (note) => toast.success(note);
   let notifyError = (note) => toast.error(note);
 
-
   let message = (note, type) => {
     if (type === "success") {
-        notifySuccess(note);
+      notifySuccess(note);
     } else {
-        notifyError(note);
+      notifyError(note);
     }
-  }
+  };
 
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("https://portfolio-backend-fjkx.onrender.com/comments", {
-        method: "POST",
-        body: JSON.stringify({username, email, comment}),
-        headers: {
-            'Content-Type': 'application/json'
+      setLoading(true);
+      let res = await fetch(
+        "https://portfolio-backend-fjkx.onrender.com/comments",
+        {
+          method: "POST",
+          body: JSON.stringify({ username, email, comment }),
+          headers: {
+            "Content-Type": "application/json",
+          },
         }
-      });
+      );
       let resJson = await res.json();
+      setLoading(false);
       if (res.status >= 200 && res.status < 300) {
         setUsername("");
         setEmail("");
         setComment("");
-        let messageFromBackend = language === "uz" ? resJson.message.uz : language === "ru" ? resJson.message.ru : resJson.message.en;
+        let messageFromBackend =
+          language === "uz"
+            ? resJson.message.uz
+            : language === "ru"
+            ? resJson.message.ru
+            : resJson.message.en;
         message(messageFromBackend, "success");
         // window.location.reload();
       } else {
@@ -79,7 +94,10 @@ const Form = () => {
           ? "Если у вас есть какое-либо предложение, проект или даже вы хотите поздороваться.. Пожалуйста, заполните форму ниже, и я отвечу вам в ближайшее время. "
           : "If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly. "}
       </p>
-      <form onSubmit={handleSubmit} className="mt-10 text-gray-500" name="getInTouch">
+      <form
+        onSubmit={handleSubmit}
+        className="mt-10 text-gray-500"
+        name="getInTouch">
         <div className="focus-within:text-blue">
           <label className="flex flex-row items-center gap-1">
             <FaRegUser />
@@ -141,10 +159,10 @@ const Form = () => {
           />
         </div>
         <div className="mt-5" onClick={message}>
-          <Button text={text}/>
+          <Button text={text} />
         </div>
       </form>
-      <ToastContainer theme="dark"/>
+      <ToastContainer theme="dark" />
     </div>
   );
 };

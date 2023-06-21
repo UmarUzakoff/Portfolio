@@ -15,10 +15,10 @@ const Header = () => {
 
   return (
     <header
-      className={`py-3 px-5 container  ${
+      className={`py-3 px-5 w-full ${
         theme === "dark" ? "bg-dark1 text-light1" : "bg-light1 text-dark1"
       }`}>
-      <div className="flex flex-row justify-end gap-5 items-end">
+      <div className="flex container flex-row justify-end gap-5 items-end">
         <div
           className={`rounded-full${
             theme === "dark" ? "bg-dark1 text-light1" : "bg-light1 text-dark1"
@@ -49,46 +49,3 @@ const Header = () => {
 
 export default Header;
 
-// <nav className="p-2 flex justify-between">
-//   <ul className="flex gap-3">
-//     <li>
-//       {/* <Link to={'/'}>Home</Link> */}
-//       <NavLink
-//         className={({ isActive }) => `${isActive ? "navActive" : ""} p-3`}
-// to={"/"}>
-// {language === "uz"
-//   ? "Asosiy"
-//   : language === "ru"
-//   ? "Главное"
-//   : "Home"}
-//       </NavLink>
-//     </li>
-//     <li>
-//       {/* <Link to={'/product'}>Product</Link> */}
-//       <NavLink
-//         className={({ isActive }) => `${isActive ? "navActive" : ""} p-3`}
-//         to={"/product"}>
-//         Product
-//       </NavLink>
-//     </li>
-//     <li>
-//       {/* <Link to={'/about'}>About</Link> */}
-//       <NavLink
-//         className={({ isActive }) => `${isActive ? "navActive" : ""} p-3`}
-//         to={"/about"}>
-//         About
-//       </NavLink>
-//     </li>
-//     <li className="rounded-full bg-white" onClick={toggleTheme}>
-//       {theme}
-//     </li>
-//   </ul>
-
-//   <select onChange={onChange}>
-//     <option value="uz">uzbek</option>
-//     <option value="ru">russian</option>
-//     <option value="en" selected>
-//       english
-//     </option>
-//   </select>
-// </nav>

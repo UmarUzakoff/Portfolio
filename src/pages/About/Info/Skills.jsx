@@ -86,7 +86,7 @@ const Skills = () => {
             </span>
             <span className="flex flex-row items-center">
               <img src={sql} className="w-[25px] h-9" alt="SQL"/>
-              &nbsp;SQL
+              &nbsp;SQL (PostgreSQL)
             </span>
           </li>
         </ul>

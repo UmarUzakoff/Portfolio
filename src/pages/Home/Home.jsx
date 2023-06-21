@@ -8,11 +8,13 @@ const Home = () => {
 
   return (
     <div
-      className={`container pt-7 h-screen sm:h-full sm:pb-[18px] ${
+      className={`w-full pt-7 h-screen  sm:pb-[18px] ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
-      <Intro />
-      <Navigation />
+      <div className="container">
+        <Intro />
+        <Navigation />
+      </div>
     </div>
   );
 };

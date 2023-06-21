@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ThemeApi } from "../../../../context/themeContext";
 import { LocalizationApi } from "../../../../context/localizationContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   getAccessTokenFromLocalStorage,
 } from "../../Form/storage";
@@ -66,6 +66,7 @@ const AddProjectToPortfolio = () => {
         setLink("");
         setName("");
         setUsedTechnologies("");
+        
         let messageFromBackend =
           language === "uz"
             ? resJson.message.uz
@@ -83,9 +84,25 @@ const AddProjectToPortfolio = () => {
 
   return (
     <section
-      className={`container ${theme === "light" ? "bg-light1" : "bg-dark1"}`}>
-      <BackBtn />
-      <div>
+      className={`w-full h-screen ${theme === "light" ? "bg-light1" : "bg-dark1"}`}>
+      <div className="container">
+        <div className="flex flex-col sm:flex-row w-max gap-3">
+          <BackBtn />
+          <Link
+            to={"/admin/dashboard"}
+            className="relative left-5 bottom-8 sm:bottom-7 bg-transparent hover:border-sky-600 text-blue hover:text-sky-500 transform duration-300 font-semibold sm:py-2 py-1 px-3 sm:px-4 border border-blue rounded">
+            <span>
+              &larr;{" "}
+              {language === "uz"
+                ? "ASOSIY PANEL"
+                : language === "ru"
+                ? "ГЛАВНАЯ ПАНЕЛЬ"
+                : "DASHBOARD"}
+            </span>
+          </Link>
+        </div>
+      </div>
+      <div className="container">
         <div
           className={`flex flex-col justify-center ${
             theme === "light" ? "bg-light2" : "bg-dark2"

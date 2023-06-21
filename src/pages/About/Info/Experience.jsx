@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { FaCalendarAlt } from "react-icons/fa";
 import { LocalizationApi } from "../../../context/localizationContext";
 import { ThemeApi } from "../../../context/themeContext";
 
@@ -24,20 +25,26 @@ const Experience = () => {
         </h5>
       </div>
       <div className="mx-5 mt-5 flex flex-col gap-3">
-        <h6 className="font-bold">
+        <h6 className="font-bold text-2xl">Mars IT School</h6>
+        <p className="font-thin uppercase">
           {language === "uz"
-            ? "FULLSTACK WEB DASTURCHI"
+            ? "FRONTEND TUTOR"
             : language === "ru"
-            ? "FULLSTACK ВЕБ-РАЗРАБОТЧИК"
-            : "FULLSTACK WEB DEVELOPER"}
-        </h6>
-        <p className="font-thin">
-          {language === "uz"
-            ? "Garchi bu sohada hozirchalik haqiqiy tajribam bo'lmasada, mening asosiy maqsadim bu o'zimning nazariy bilim va amaliy ko'nikmalarimni yuqori sifatli veb-ilovalarni yaratish uchun qo'llashdir!"
-            : language === "ru"
-            ? "Как веб-разработчик с полным стеком, я полон решимости использовать свое образование и навыки для достижения успеха на этой должности. Хотя я недавний выпускник без какого-либо предыдущего опыта, я очень хочу применить свои теоретические знания и практические навыки для развития и поддержания успешных веб-приложений."
-            : "As a full-stack web developer, I am determined to utilize my education and skills to achieve success in this position. Although I am a recent graduate without any prior experience, I am eager to apply my theoretical knowledge and practical skills to develop and maintain successful web applications."}
+            ? "Преподаватель Frontend"
+            : "FRONTEND TUTOR"}
         </p>
+        <span
+          className={`flex flex-row items-center gap-2 font-thin text-sm opacity-60 ${
+            theme === "light" ? "text-dark2" : "text-light2"
+          }`}>
+          <FaCalendarAlt />
+          2023 {" "}
+          {language === "uz"
+            ? "Iyun - Hozirda ishlamoqdaman"
+            : language === "ru"
+            ? "Июнь - сейчас работаю"
+            : "June - Currently working"}
+        </span>
         <hr className="w-40 h-1 my-3 bg-blue border-0 rounded"></hr>
       </div>
     </div>
