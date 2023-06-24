@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { ThemeApi } from "../../context/themeContext";
 import BackBtn from "../../utils/BackBtn";
 import Heading from "../../utils/Heading";
+import ReactPlayer from "react-player/lazy";
+import thumbnail from "../../images/thumbnail.png"
 
 const Blog = () => {
   const { theme } = useContext(ThemeApi);
@@ -21,16 +23,16 @@ const Blog = () => {
       </div>
       <div
         className={`container flex justify-center items-center ${
-          theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
+          theme === "light" ? "bg-light2 text-dark2" : "bg-dark1 text-light2"
         }`}>
-        <iframe
-          className="w-full"
-          height="498"
-          src="https://www.youtube.com/embed/hftggakTH-w"
-          title="The benefits of learning multiple programming languages | Umarbek Uzoqov | TEDxUWED"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen></iframe>
+        <ReactPlayer
+          className="w-full h-96"
+          height={"498"}
+          light={thumbnail}
+          url={"https://www.youtube.com/embed/hftggakTH-w"}
+          controls
+          playing
+        />
       </div>
     </div>
   );
