@@ -161,7 +161,7 @@ const PersonalInfo = () => {
           <Button text={text} />
         </a>
         <Link
-          to={"/"}
+          to={"/aboutMe/myBlog"}
           className=" bg-transparent hover:border-sky-600 text-blue hover:text-sky-500 transform duration-300 font-semibold py-2.5 px-[75px] sm:px-8 border border-blue rounded">
           <span>
             {" "}

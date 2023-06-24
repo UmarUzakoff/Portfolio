@@ -1,5 +1,6 @@
 export { default as HomePage } from './Home/Home'
 export { default as AboutPage } from './About/About'
+export { default as MyBlog } from './Blog/Blog'
 export { default as MyPortfolio } from './Portfolio/Portfolio'
 export { default as ExactProject } from './Portfolio/ExactProject'
 export { default as ContactPage } from './Contact/Contact'

@@ -9,6 +9,7 @@ import {
   MyPortfolio,
   ExactProject,
   AddProjectToPortfolio,
+  MyBlog,
 } from "./pages";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -21,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutMe" element={<AboutPage />} />
+          <Route path="/aboutMe/myBlog" element={<MyBlog />} />
           <Route path="/myPortfolio" element={<MyPortfolio />} />
           <Route path="/myPortfolio/:id" element={<ExactProject />} />
           <Route path="/contact" element={<ContactPage />} />
