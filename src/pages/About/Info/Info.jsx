@@ -128,7 +128,9 @@ const Info = () => {
         </div>
         <div
           className={`w-4/5 sm:h-[430px] rounded border ${
-            activeTab === "education" ? "sm:overflow-y-scroll sm:scrollbar-thin sm:scrollbar-thumb-gray-400 sm:scrollbar-track-gray-300" : " "
+            activeTab === "experience"
+              ? " "
+              : "sm:overflow-y-scroll sm:scrollbar-thin sm:scrollbar-thumb-gray-400 sm:scrollbar-track-gray-300"
           } ${
             theme === "light"
               ? "border-dark2 opacity-60 border-t-0"
