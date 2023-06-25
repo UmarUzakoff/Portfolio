@@ -127,7 +127,7 @@ const ExactProject = () => {
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
-      <div className="flex w-max flex-col sm:flex-row gap-3 sm:gap-5">
+      <div className="flex w-max flex-col text-center sm:flex-row gap-3 sm:gap-5">
         <BackBtn />
         <Link
           to={"/myPortfolio"}
