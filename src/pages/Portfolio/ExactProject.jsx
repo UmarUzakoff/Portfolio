@@ -148,7 +148,7 @@ const ExactProject = () => {
         className={`container sm:px-20 px-2 pt-[14px] flex flex-col sm:flex-row justify-center gap-10 ${
           theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
         }`}>
-        <div className="w-screen px-1 py-10 sm:p-10 flex flex-col md:flex-row gap-10">
+        <div className="w-screen px-1 py-10 sm:p-10 flex justify-center items-center sm:justify-start sm:items-start flex-col md:flex-row gap-10">
           <div
             className={`rounded-lg w-80 sm:w-96 bg-black/5 border-2 border-solid border-black/5 transition-all flex flex-col items-stretch justify-start ${
               theme === "light" ? "hover:bg-light1/50" : "hover:bg-dark1"
