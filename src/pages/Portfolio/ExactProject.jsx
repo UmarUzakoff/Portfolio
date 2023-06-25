@@ -418,7 +418,7 @@ const ExactProject = () => {
               </a>
             </div>
           </div>
-          <div className="max-w-3xl">
+          <div className="max-w-2xl sm:max-w-3xl">
             <h5 className="first-letter:text-blue first-letter:uppercase font-bold text-2xl mb-3">
               {project.name}
             </h5>
