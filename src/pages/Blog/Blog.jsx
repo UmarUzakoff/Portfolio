@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ThemeApi } from "../../context/themeContext";
 import BackBtn from "../../utils/BackBtn";
 import Heading from "../../utils/Heading";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player/youtube";
 import thumbnail from "../../images/thumbnail.png"
 
 const Blog = () => {
