@@ -123,11 +123,11 @@ const ExactProject = () => {
 
   return (
     <div
-      className={`w-full ${
+      className={`w-full h-screen ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
-      <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
+      <div className="flex w-max flex-col sm:flex-row gap-3 sm:gap-5">
         <BackBtn />
         <Link
           to={"/myPortfolio"}
@@ -148,7 +148,7 @@ const ExactProject = () => {
         className={`container sm:px-20 px-2 pt-[14px] flex flex-col sm:flex-row justify-center gap-10 ${
           theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
         }`}>
-        <div className="w-screen p-10 flex flex-col md:flex-row gap-10">
+        <div className="w-screen px-1 py-10 sm:p-10 flex flex-col md:flex-row gap-10">
           <div
             className={`rounded-lg w-80 sm:w-96 bg-black/5 border-2 border-solid border-black/5 transition-all flex flex-col items-stretch justify-start ${
               theme === "light" ? "hover:bg-light1/50" : "hover:bg-dark1"
