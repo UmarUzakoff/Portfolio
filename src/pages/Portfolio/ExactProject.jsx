@@ -123,10 +123,11 @@ const ExactProject = () => {
 
   return (
     <div
-      className={`container ${
+      className={`w-full ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
-      <div className="flex flex-row gap-5">
+      <div className="container">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
         <BackBtn />
         <Link
           to={"/myPortfolio"}
@@ -141,9 +142,10 @@ const ExactProject = () => {
           </span>
         </Link>
       </div>
+        </div>
       <Heading text={text} />
       <div
-        className={`sm:px-20 px-2 pt-[14px] flex flex-col sm:flex-row justify-center gap-10 ${
+        className={`container sm:px-20 px-2 pt-[14px] flex flex-col sm:flex-row justify-center gap-10 ${
           theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
         }`}>
         <div className="w-screen p-10 flex flex-col md:flex-row gap-10">
