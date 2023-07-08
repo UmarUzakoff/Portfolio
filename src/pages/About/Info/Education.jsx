@@ -103,7 +103,7 @@ const Education = () => {
             : language === "ru"
             ? "СРЕДНИЙ GPA БАЛЛ"
             : "AVERAGE GPA"}{" "}
-          : 4.25 / 4.5
+          : 4.33 / 4.5
         </span>
         <span
           className={`flex flex-row items-center gap-2 font-thin text-sm opacity-60 ${
