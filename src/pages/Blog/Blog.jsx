@@ -4,9 +4,12 @@ import BackBtn from "../../utils/BackBtn";
 import Heading from "../../utils/Heading";
 import ReactPlayer from "react-player/youtube";
 import thumbnail from "../../images/thumbnail.png";
+import { Link } from "react-router-dom/dist";
+import { LocalizationApi } from "../../context/localizationContext";
 
 const Blog = () => {
   const { theme } = useContext(ThemeApi);
+  const { setLanguage, language } = useContext(LocalizationApi);
   let text = {
     uz: "Mening Blogim",
     ru: "Мой Блог",
