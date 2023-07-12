@@ -24,7 +24,7 @@ const Blog = () => {
         <div className="flex flex-col sm:flex-row w-max gap-3">
           <BackBtn />
           <Link
-            to={"/admin/dashboard"}
+            to={"/aboutMe"}
             className="relative left-5 bottom-8 sm:bottom-7 bg-transparent hover:border-sky-600 text-blue hover:text-sky-500 transform duration-300 font-semibold sm:py-2 py-1 px-3 sm:px-4 border border-blue rounded">
             <span>
               &larr;{" "}
