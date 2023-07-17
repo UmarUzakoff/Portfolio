@@ -16,11 +16,15 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
+  useEffect(() => {
+    let title = history.location.pathname
+    document.title = title;
+  });
   return (
     <>
       <Layout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />}/>
           <Route path="/aboutMe" element={<AboutPage />} />
           <Route path="/aboutMe/myBlog" element={<MyBlog />} />
           <Route path="/myPortfolio" element={<MyPortfolio />} />
