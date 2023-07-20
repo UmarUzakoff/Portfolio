@@ -32,10 +32,10 @@ const Education = () => {
           <a href={ielts} download className="underline text-blue hover:text-sky-600">
             {" "}
             {language === "uz"
-              ? "Dalil"
+              ? "Sertifikat"
               : language === "ru"
-              ? "Доказательство"
-              : "Proof"}
+              ? "Сертификат"
+              : "Certificate"}
           </a>
         </span>
         <span
