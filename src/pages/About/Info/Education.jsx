@@ -109,7 +109,8 @@ const Education = () => {
           : 4.33 / 4.5
           <a
             href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/608e4367-998a-4494-bbef-16a0cd04eac4.pdf"
-            className="text-blue underline ml-2">
+            className="text-blue underline ml-2"
+            target={"_blank"}>
             Proof
           </a>
         </span>
