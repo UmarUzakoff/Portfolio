@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaHome,
   FaInstagram,
+  FaLinkedin,
   FaPhoneAlt,
   FaTelegram,
 } from "react-icons/fa";
@@ -39,7 +40,7 @@ const Info = () => {
           <span className="text-blue font-bold">EMAIL</span>
           <span className="flex flex-row items-center gap-2 ">
             <FaEnvelope />
-            <a href="mailto:uzakovumar338@gmail.com">uzakovumar338@gmail.com</a>
+            <a href="mailto:umar.uzakoff@mail.ru">umar.uzakoff@mail.ru</a>
           </span>
         </li>
         <li className="flex flex-col gap-3">
@@ -100,6 +101,14 @@ const Info = () => {
                   theme === "light" ? "border-dark1" : "border-light1"
                 }`}>
                 <FaGithub className="w-6 h-6" />
+              </button>
+            </Link>
+            <Link to={"https://www.linkedin.com/in/umar-uzakov-a71921267"} target="_blank">
+              <button
+                className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
+                  theme === "light" ? "border-dark1" : "border-light1"
+                }`}>
+                <FaLinkedin className="w-6 h-6" />
               </button>
             </Link>
           </div>
