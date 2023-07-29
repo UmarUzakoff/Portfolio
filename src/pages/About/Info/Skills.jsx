@@ -9,7 +9,7 @@ import express from "../../../images/express.svg";
 import ejs from "../../../images/ejs.svg";
 import grammy from "../../../images/grammy.png";
 import socket from "../../../images/socket.svg";
-import sql from "../../../images/sql.svg";
+import database from "../../../images/database.png";
 import axios from "../../../images/axios.png";
 
 const Skills = () => {
@@ -100,12 +100,12 @@ const Skills = () => {
               &nbsp;SOCKET.IO
             </span>
             <span className="flex flex-row items-center">
-              <img src={sql} className="w-[25px] h-9" alt="SQL" />
+              <img src={database} className="w-[25px] h-9" alt="SQL" />
               &nbsp;
               <div className="flex flex-col gap-4">
                 <span>PostgreSQL</span>
                 <span>MongoDB</span>
-                <span>Mongoose</span>
+                <span>Redis</span>
               </div>
             </span>
           </li>

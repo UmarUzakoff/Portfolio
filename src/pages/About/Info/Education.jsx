@@ -29,7 +29,10 @@ const Education = () => {
         <h6 className="font-bold">Millennium IELTS Center</h6>
         <span>
           IELTS 6.5{" "}
-          <a href={ielts} download className="underline text-blue hover:text-sky-600">
+          <a
+            href={ielts}
+            download
+            className="underline text-blue hover:text-sky-600">
             {" "}
             {language === "uz"
               ? "Sertifikat"
@@ -104,6 +107,11 @@ const Education = () => {
             ? "СРЕДНИЙ GPA БАЛЛ"
             : "AVERAGE GPA"}{" "}
           : 4.33 / 4.5
+          <a
+            href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/608e4367-998a-4494-bbef-16a0cd04eac4.pdf"
+            className="text-blue underline ml-2">
+            Proof
+          </a>
         </span>
         <span
           className={`flex flex-row items-center gap-2 font-thin text-sm opacity-60 ${
