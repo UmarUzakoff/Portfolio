@@ -27,9 +27,9 @@ const PersonalInfo = () => {
           ? "Men Toshkent shahrida Fullstack Web Developer sifatida ishlayman. Menda UI effektlari va yuqori sifatli web ilovalarni yaratishga bo'lgan kuchli istak bor."
           : language === "ru"
           ? "Я работаю как Fullstack Web Developer в Ташкенте, Узбекистан. У меня есть сильное желание создавать эффекты пользовательского интерфейса и высокопроизводительные приложения. "
-          : "I work as a Junior Fullstack Web Developer in Tashkent, Uzbekistan.Dedicated and efficient developer who has a strong desire to create UI effects and high-performance applications. "}
+          : "I work as a Fullstack Web Developer in Tashkent, Uzbekistan.Dedicated and efficient developer who has a strong desire to create UI effects and high-performance applications. "}
       </p>
-      <div className="mt-5 flex md:flex-row justify-start flex-col md:items-center lg:gap-60 gap-3 text-xs sm:text-lg">
+      <div className="mt-5 flex md:flex-row justify-start flex-col md:items-center lg:gap-60 gap-7 text-xs sm:text-lg">
         <ul className="flex flex-row justify-start items-center gap-5">
           <li className="flex flex-col gap-2 font-semibold">
             <span>
@@ -51,7 +51,7 @@ const PersonalInfo = () => {
                 ? "Tug'ilgan kun:"
                 : language === "ru"
                 ? "Дата рождения: "
-                : "Date of Birth: "}
+                : "BirthDate: "}
             </span>
             <span>
               {language === "uz"
@@ -80,13 +80,7 @@ const PersonalInfo = () => {
                 : "Uzoqov "}
             </span>
             <span>
-              30{" "}
-              {language === "uz"
-                ? "Iyul "
-                : language === "ru"
-                ? "Июль "
-                : "July "}{" "}
-              2004
+              30.07.2004
             </span>
             <span>
               {language === "uz"
@@ -105,7 +99,7 @@ const PersonalInfo = () => {
             </span>
           </li>
         </ul>
-        <ul className="flex flex-row justify-start items-center gap-5">
+        <ul className="flex flex-row justify-start items-center gap-9">
           <li className="flex flex-col gap-2 font-semibold">
             <span>
               {language === "uz"
