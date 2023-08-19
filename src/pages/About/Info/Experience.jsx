@@ -28,10 +28,10 @@ const Experience = () => {
         <h6 className="font-bold text-2xl">CoddyCamp IT Academy</h6>
         <p className="font-thin uppercase">
           {language === "uz"
-            ? "FRONTEND - MENTOR"
+            ? "FULL-STACK WEB DASTURLASH - MENTOR"
             : language === "ru"
-            ? "Ментор - Frontend"
-            : "FRONTEND - MENTOR"}
+            ? "Ментор - FULL-STACK WEB РАЗРАБОТКА"
+            : "FULL-STACK WEB DEVELOPMENT - MENTOR"}
         </p>
         <span
           className={`flex flex-row items-center gap-2 font-thin text-sm opacity-60 ${
