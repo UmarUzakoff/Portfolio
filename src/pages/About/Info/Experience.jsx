@@ -54,7 +54,7 @@ const Experience = () => {
             ? "FRONTEND WEB DASTURLASH - INSTRUKTOR"
             : language === "ru"
             ? "Инструктор - Frontend WEB Разработка"
-            : "FRONTEND WEB DEVELOPMENT- INSTRUCTOR"}
+            : "FRONTEND WEB DEVELOPMENT - INSTRUCTOR"}
         </p>
         <span
           className={`flex flex-row items-center gap-2 font-thin text-sm opacity-60 ${
