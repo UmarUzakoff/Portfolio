@@ -24,9 +24,9 @@ const PersonalInfo = () => {
       </h4>
       <p className="mt-5 text-xs sm:text-lg">
         {language === "uz"
-          ? "Men Toshkent shahrida Fullstack Web Developer sifatida ishlayman. Menda UI effektlari va yuqori sifatli web ilovalarni yaratishga bo'lgan kuchli istak bor."
+          ? "Men Toshkent shahrida Fullstack Web Dasturchisi sifatida ishlayman. Menda UI effektlari va yuqori sifatli web ilovalarni yaratishga bo'lgan kuchli istak bor."
           : language === "ru"
-          ? "Я работаю как Fullstack Web Developer в Ташкенте, Узбекистан. У меня есть сильное желание создавать эффекты пользовательского интерфейса и высокопроизводительные приложения. "
+          ? "Я работаю как Fullstack Web Разработчик в Ташкенте, Узбекистан. У меня есть сильное желание создавать эффекты пользовательского интерфейса и высокопроизводительные приложения. "
           : "I work as a Fullstack Web Developer in Tashkent, Uzbekistan.Dedicated and efficient developer who has a strong desire to create UI effects and high-performance applications. "}
       </p>
       <div className="mt-5 flex md:flex-row justify-start flex-col md:items-center lg:gap-60 gap-7 text-xs sm:text-lg">
