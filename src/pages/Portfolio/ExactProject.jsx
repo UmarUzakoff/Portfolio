@@ -414,7 +414,7 @@ const ExactProject = () => {
                 href={project.link}
                 target={`_blank`}
                 className="text-blue font-thin text-sm mt-10 mb-2">
-                https://project.netlify.app
+                {project.link == "classroomcoins.uz" ? project.link : "https://project.netlify.app"}
               </a>
             </div>
           </div>
