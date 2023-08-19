@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LocalizationApi } from "../../../context/localizationContext";
 import { ThemeApi } from "../../../context/themeContext";
-import { FaBriefcase, FaHandshake, FaRegHeart } from "react-icons/fa";
+import { FaLanguage, FaHandshake, FaRegHeart } from "react-icons/fa";
 
 const Stats = () => {
   const { theme } = useContext(ThemeApi);
@@ -10,7 +10,7 @@ const Stats = () => {
   return (
     <section className="flex md:flex-row flex-col justify-center items-center gap-10 sm:gap-20 lg:gap-60">
       <div className="flex flex-row gap-3 justify-center items-center">
-        <FaBriefcase className="w-16 h-16" />
+        <FaLanguage className="w-16 h-16" />
         <div className="flex flex-col">
           <span className="text-blue text-5xl">4+</span>
           <span
