@@ -30,8 +30,7 @@ const Education = () => {
         <span>
           IELTS 6.5{" "}
           <a
-            href={ielts}
-            download
+            href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/82585443-d2d1-4a94-82d4-bb58a4d655d7.pdf"
             className="underline text-blue hover:text-sky-600">
             {" "}
             {language === "uz"
