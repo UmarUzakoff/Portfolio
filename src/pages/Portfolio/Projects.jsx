@@ -2,32 +2,19 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeApi } from "../../context/themeContext";
 import { FaCalendarAlt } from "react-icons/fa";
+import projects from "./projectsdata";
 
 const MyProjects = () => {
   const { theme } = useContext(ThemeApi);
 
   ////-------------------LOADING--------------------
 
-  const [loading, setLoading] = useState(false);
-
-  ////-------------------GET_Projects--------------------
-
-  const [projects, setProjects] = useState([]);
-
-  const fetchUserData = () => {
-    setLoading(true);
-    fetch("https://portfolio-backend-fjkx.onrender.com/projects")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setProjects(data);
-        setLoading(false);
-      });
-  };
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchUserData();
+    setTimeout(() => {
+      setLoading(false);
+    }, 200);
   }, []);
 
   return (
@@ -50,7 +37,7 @@ const MyProjects = () => {
                 }`}
                 href="#">
                 <img
-                  src={`https://portfolio-backend-fjkx.onrender.com/uploads/${project.image}`}
+                  src={project.image}
                   alt={`${project.name}`}
                   className="w-full h-48 pb-0 mb-0 border-b-4 border-blue "
                 />

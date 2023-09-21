@@ -13,7 +13,7 @@ const MyPortfolio = () => {
   };
   return (
     <div
-      className={`w-full h-screen ${
+      className={`w-full h-full ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
@@ -31,3 +31,4 @@ const MyPortfolio = () => {
 };
 
 export default MyPortfolio;
+

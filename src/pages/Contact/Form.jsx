@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { LocalizationApi } from "../../context/localizationContext";
 // import { ThemeApi } from "../../context/themeContext";
 import { ToastContainer, toast } from "react-toastify";
@@ -14,11 +15,11 @@ const Form = () => {
 
   const [loading, setLoading] = useState(false);
 
-  let text = loading
+  let loadingText = loading
     ? {
         uz: "Yuborilmoqda...",
         ru: "Отправка...",
-        en: "Loading...",
+        en: "Sending...",
       }
     : {
         uz: "XABARNI YUBORISH",
@@ -26,10 +27,13 @@ const Form = () => {
         en: "SEND MESSAGE",
       };
 
+  const sentMessage =
+    language === "uz"
+      ? "XABARINGIZ YUBORIlDI!"
+      : language === "ru"
+      ? "ОТПРАВЛЕНО!"
+      : "Got your message 😉";
   ////////-----------FORM--------------------------------
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
 
   let notifySuccess = (note) => toast.success(note);
   let notifyError = (note) => toast.error(note);
@@ -42,41 +46,30 @@ const Form = () => {
     }
   };
 
-  let handleSubmit = async (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    try {
-      setLoading(true);
-      let res = await fetch(
-        "https://portfolio-backend-fjkx.onrender.com/comments",
-        {
-          method: "POST",
-          body: JSON.stringify({ username, email, comment }),
-          headers: {
-            "Content-Type": "application/json",
-          },
+    setLoading(true);
+    emailjs
+      .sendForm(
+        "service_qc4nftx",
+        "template_jn6x53c",
+        form.current,
+        "8Fg4UhLrfqGFQLg5G"
+      )
+      .then(
+        (result) => {
+          message(sentMessage, "success");
+          setLoading(false);
+        },
+        (error) => {
+          message(error.text, "error");
+          setLoading(false);
         }
       );
-      let resJson = await res.json();
-      setLoading(false);
-      if (res.status >= 200 && res.status < 300) {
-        setUsername("");
-        setEmail("");
-        setComment("");
-        let messageFromBackend =
-          language === "uz"
-            ? resJson.message.uz
-            : language === "ru"
-            ? resJson.message.ru
-            : resJson.message.en;
-        message(messageFromBackend, "success");
-        // window.location.reload();
-      } else {
-        message(resJson.error, "error");
-      }
-    } catch (err) {
-      console.log(err);
-    }
   };
+
   return (
     <div>
       <iframe name="hiddenFrame" className="hide" title=" "></iframe>
@@ -95,7 +88,8 @@ const Form = () => {
           : "If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly. "}
       </p>
       <form
-        onSubmit={handleSubmit}
+        ref={form}
+        onSubmit={sendEmail}
         className="mt-10 text-gray-500"
         name="getInTouch">
         <div className="focus-within:text-blue">
@@ -110,8 +104,6 @@ const Form = () => {
           </label>
           <input
             autoComplete="off"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
             required
             className="appearance-none border-gray-500 bg-transparent border-b-2 w-full mr-3 py-1 px-2 leading-tight focus:border-blue focus:text-light1 focus:outline-none"
             type="text"
@@ -131,8 +123,6 @@ const Form = () => {
           <input
             autoComplete="off"
             required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
             className="appearance-none border-gray-500 bg-transparent border-b-2 w-full mr-3 py-1 px-2 leading-tight focus:border-blue focus:text-light1 focus:outline-none"
             type="email"
             name="email"
@@ -151,15 +141,13 @@ const Form = () => {
           <input
             autoComplete="off"
             required
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
             className="appearance-none border-gray-500 bg-transparent border-b-2 w-full mr-3 py-1 px-2 leading-tight focus:border-blue focus:text-light1 focus:outline-none"
             type="text"
-            name="comment"
+            name="message"
           />
         </div>
         <div className="mt-5" onClick={message}>
-          <Button text={text} />
+          <Button text={loadingText} />
         </div>
       </form>
       <ToastContainer theme="dark" />
