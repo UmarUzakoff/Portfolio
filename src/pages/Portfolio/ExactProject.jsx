@@ -31,7 +31,7 @@ const ExactProject = () => {
 
   return (
     <div
-      className={`w-full h-full ${
+      className={`w-full ${loading ? "h-[100vh]" : "h-full"} ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
@@ -60,7 +60,7 @@ const ExactProject = () => {
         </div>
       ) : (
         <div
-          className={`container sm:px-20 pt-[14px] flex flex-col sm:flex-row justify-center gap-10 ${
+          className={`container sm:px-20 py-5 flex flex-col sm:flex-row justify-center gap-10 ${
             theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
           }`}>
           <div className="w-screen px-1 py-10 sm:p-10 flex justify-center items-center sm:justify-start sm:items-start flex-col md:flex-row gap-10">
@@ -72,6 +72,7 @@ const ExactProject = () => {
                 src={project.image}
                 alt={`${project.name}`}
                 className="w-full h-48 rounded-lg pb-0 mb-0 border-b-4 border-blue "
+                loading="lazy"
               />
               <div className="flex flex-col justify-start items-start mx-3 my-2">
                 <div className="flex justify-between gap-32 sm:gap-48 flex-row items-center">

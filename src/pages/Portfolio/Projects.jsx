@@ -18,9 +18,9 @@ const MyProjects = () => {
   }, []);
 
   return (
-    <div className="h-full w-full">
+    <div className={`${loading ? "h-[100vh]" : "h-full"} w-full`}>
       {loading ? (
-        <div className="mt-20 flex justify-center items-center">
+        <div className="mt-40 flex justify-center items-center">
           <div
             className="w-12 h-12 rounded-full animate-spin absolute border-8 border-dashed
          border-blue border-t-transparent"></div>
@@ -40,6 +40,7 @@ const MyProjects = () => {
                   src={project.image}
                   alt={`${project.name}`}
                   className="w-full h-48 pb-0 mb-0 border-b-4 border-blue "
+                  loading="lazy"
                 />
                 <div className="flex flex-row justify-between items-center p-2">
                   <span>{project.name}</span>
