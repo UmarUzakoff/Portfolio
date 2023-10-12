@@ -31,7 +31,8 @@ const Education = () => {
           IELTS 6.5{" "}
           <a
             href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/82585443-d2d1-4a94-82d4-bb58a4d655d7.pdf"
-            className="underline text-blue hover:text-sky-600">
+            className="underline text-blue hover:text-sky-600"
+            target="_blank">
             {" "}
             {language === "uz"
               ? "Sertifikat"
@@ -80,6 +81,17 @@ const Education = () => {
             : language === "ru"
             ? "ПОЛНАЯ ВЕБ-РАЗРАБОТКА"
             : "FULLSTACK WEB DEVELOPMENT"}
+            &nbsp;
+            <a
+            href="https://www.linkedin.com/feed/update/urn:li:activity:7117349074273472512/"
+            className="underline text-blue hover:text-sky-600"
+            target="_blank">
+            {language === "uz"
+              ? "Sertifikat"
+              : language === "ru"
+              ? "Сертификат"
+              : "Certificate"}
+          </a>
         </span>
         <span
           className={`flex flex-row items-center gap-1 md:gap-2 font-thin text-sm opacity-60 ${
@@ -109,7 +121,7 @@ const Education = () => {
           <a
             href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/608e4367-998a-4494-bbef-16a0cd04eac4.pdf"
             className="text-blue underline ml-2"
-            target={"_blank"}>
+            target="_blank">
             Proof
           </a>
         </span>
