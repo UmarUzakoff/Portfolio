@@ -26,7 +26,7 @@ const projects = [
     name: "EshikOyna.uz",
     image: eshikoyna,
     usedTechnologies: "REACT",
-    link: "eshik-oyna.netlify.app",
+    link: "https://eshik-oyna.netlify.app",
     description: {
       en: "During an interview process, I was tasked with creating a faithful replica of the popular eCommerce website EshiKoyna.uz. My primary objectives were to demonstrate my expertise in web development best practices, familiarity with industry standards, and ability to follow precise instructions. In doing so, I utilized cutting-edge front-end technologies such as HTML5, CSS3, JavaScript, and ReactJS to ensure optimal performance across multiple devices and platforms.",
       ru: "Во время собеседования мне было поручено создать точную копию популярного сайта электронной коммерции EshiKoyna.uz. Моими основными целями было продемонстрировать свой опыт в лучших практиках веб-разработки, знание отраслевых стандартов и способность следовать точным инструкциям. При этом я использовал передовые интерфейсные технологии, такие как HTML5, CSS3, JavaScript и ReactJS, чтобы обеспечить оптимальную производительность на различных устройствах и платформах.",
