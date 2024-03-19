@@ -39,7 +39,7 @@ const MyProjects = () => {
                 <img
                   src={project.image}
                   alt={`${project.name}`}
-                  className="w-full h-48 pb-0 mb-0 border-b-4 border-blue "
+                  className="w-full h-48 pb-0 mb-0 border-b-4 border-blue rounded-lg"
                   loading="lazy"
                 />
                 <div className="flex flex-row justify-between items-center p-2">

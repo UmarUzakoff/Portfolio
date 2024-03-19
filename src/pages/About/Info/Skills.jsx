@@ -33,7 +33,7 @@ const Skills = () => {
             : "SKILLS"}
         </h5>
       </div>
-      <div className="max-w-max ml-5 mt-5">
+      <div className="max-w-max ml-5 my-5">
         <ul
           className={`flex flex-row gap-7 text-sm sm:gap-7 lg:gap-40 sm:text-base lg:text-2xl opacity-60 font-semibold ${
             theme === "light" ? "text-dark2" : "text-light1"

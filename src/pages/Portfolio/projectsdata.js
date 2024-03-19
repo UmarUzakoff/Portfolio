@@ -3,10 +3,25 @@ import eshikoyna from "./images/eshikoyna.png";
 import imbastudio from "./images/imbastudio.png";
 import metallcenter from "./images/metallcenter.png";
 import netflix from "./images/netflix.png";
+import hackerrank from "./images/hackerrank.png";
 
 const projects = [
   {
     id: 1,
+    start_date: "17.03.2024",
+    end_date: "19.03.2024",
+    name: "HackerRank",
+    image: hackerrank,
+    usedTechnologies: "REACT",
+    link: "https://hacker-rank2.netlify.app",
+    description: {
+      en: "The HackerRank Clone project is a frontend web application inspired by the design and functionality of the popular coding practice and competition platform, HackerRank.The project was developed as part of a hackathon event and aimed to mimic the core features of HackerRank, including user authentication, problem-solving challenges, and a leaderboard.",
+      ru: "Проект HackerRank Clone — это интерфейсное веб-приложение, вдохновленное дизайном и функциональностью популярной практики кодирования и конкурентной платформы HackerRank. Проект был разработан в рамках хакатона и направлен на имитацию основных функций HackerRank, включая аутентификацию пользователей, задачи по решению проблем и таблица лидеров.",
+      uz: "HackerRank Clone loyihasi - bu mashhur HackerRank platformasining dizayni va funksionalligidan ilhomlangan frontend veb-ilovasi. Loyiha hackathon tadbiri doirasida ishlab chiqilgan va HackerRankning asosiy xususiyatlarini, jumladan, foydalanuvchi autentifikatsiyasini taqlid qilishga qaratilgan.",
+    },
+  },
+  {
+    id: 2,
     start_date: "01.07.2023",
     end_date: "01.10.2023",
     name: "Classroom Coins",
@@ -14,13 +29,13 @@ const projects = [
     usedTechnologies: "REACT",
     link: "https://classroomcoins.uz",
     description: {
-      en: "As the creator of ClassroomCoins.uz, my goal is to provide educators with a comprehensive tool for evaluating student performance through our unique coin-based system. Our platform offers engaging animations and exciting rewards to motivate students to work hard and achieve their academic goals. With ClassroomCoins.uz, teachers can easily track progress, identify areas for improvement, and encourage positive behavior in the classroom. To access that website as a student, you can use 'alibek@mail.ru' as a login and '8869' as a password",
-      ru: "Как создатель ClassroomCoins.uz, моя цель — предоставить преподавателям комплексный инструмент для оценки успеваемости учащихся с помощью нашей уникальной системы, основанной на монетах. Наша платформа предлагает увлекательные анимации и интересные награды, которые мотивируют студентов усердно работать и достигать своих академических целей. С помощью ClassroomCoins.uz учителя могут легко отслеживать прогресс, определять области для улучшения и поощрять позитивное поведение в классе. Чтобы получить доступ к этому сайту в качестве студента, вы можете использовать alibek@mail.ru в качестве логина и «8869» в качестве пароля.",
-      uz: "ClassroomCoins.uz vebsaytining yaratuvchisi sifatida mening maqsadim o‘qituvchilarga 'coin'larga asoslangan noyob tizimimiz orqali o‘quvchilar faoliyatini baholash uchun keng qamrovli vositani taqdim etishdir. Bizning platformamiz talabalarni qattiq ishlashga va akademik maqsadlariga erishishga undash uchun qiziqarli animatsiyalar va mukofotlarni taklif etadi. ClassroomCoins.uz yordamida oʻqituvchilar o'quv jarayonini osongina kuzatishi, yaxshilash kerak boʻlgan sohalarni aniqlashi va sinfda ijobiy xulq-atvorni ragʻbatlantirishi mumkin. Talaba sifatida ushbu veb-saytga kirish uchun login sifatida “alibek@mail.ru” va parol sifatida “8869” dan foydalanishingiz mumkin.",
+      en: "As the creator of ClassroomCoins.uz, my goal is to provide educators with a comprehensive tool for evaluating student performance through our unique coin-based system. Our platform offers engaging animations and exciting rewards to motivate students to work hard and achieve their academic goals. With ClassroomCoins.uz, teachers can easily track progress, identify areas for improvement, and encourage positive behavior in the classroom. To access that website as a student, you can use 'hamidulloh@mail.ru' as a login and '8869' as a password",
+      ru: "Как создатель ClassroomCoins.uz, моя цель — предоставить преподавателям комплексный инструмент для оценки успеваемости учащихся с помощью нашей уникальной системы, основанной на монетах. Наша платформа предлагает увлекательные анимации и интересные награды, которые мотивируют студентов усердно работать и достигать своих академических целей. С помощью ClassroomCoins.uz учителя могут легко отслеживать прогресс, определять области для улучшения и поощрять позитивное поведение в классе. Чтобы получить доступ к этому сайту в качестве студента, вы можете использовать 'hamidulloh@mail.ru' в качестве логина и '8869' в качестве пароля.",
+      uz: "ClassroomCoins.uz vebsaytining yaratuvchisi sifatida mening maqsadim o‘qituvchilarga 'coin'larga asoslangan noyob tizimimiz orqali o‘quvchilar faoliyatini baholash uchun keng qamrovli vositani taqdim etishdir. Bizning platformamiz talabalarni qattiq ishlashga va akademik maqsadlariga erishishga undash uchun qiziqarli animatsiyalar va mukofotlarni taklif etadi. ClassroomCoins.uz yordamida oʻqituvchilar o'quv jarayonini osongina kuzatishi, yaxshilash kerak boʻlgan sohalarni aniqlashi va sinfda ijobiy xulq-atvorni ragʻbatlantirishi mumkin. Talaba sifatida ushbu veb-saytga kirish uchun login sifatida 'hamidulloh@mail.ru' va parol sifatida “8869” dan foydalanishingiz mumkin.",
     },
   },
   {
-    id: 2,
+    id: 3,
     start_date: "01.03.2023",
     end_date: "02.03.2023",
     name: "EshikOyna.uz",
@@ -34,7 +49,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     start_date: "01.04.2023",
     end_date: "03.04.2023",
     name: "Imba Studio",
@@ -48,7 +63,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     start_date: "01.01.2023",
     end_date: "10.01.2023",
     name: "Netflix Clone",
@@ -62,7 +77,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     start_date: "01.06.2023",
     end_date: "01.07.2023",
     name: "Metall Center",
