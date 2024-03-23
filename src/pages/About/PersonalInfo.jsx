@@ -66,18 +66,18 @@ const PersonalInfo = () => {
             <span>
               {" "}
               {language === "uz"
-                ? "Umarbek"
-                : language === "ru"
-                ? "Умарбек "
-                : "Umarbek "}
-            </span>
-            <span>
-              {" "}
-              {language === "uz"
                 ? "Uzoqov"
                 : language === "ru"
                 ? "Узаков "
                 : "Uzoqov "}
+            </span>
+            <span>
+              {" "}
+              {language === "uz"
+                ? "Umarbek"
+                : language === "ru"
+                ? "Умарбек "
+                : "Umarbek "}
             </span>
             <span>
               30.07.2004
