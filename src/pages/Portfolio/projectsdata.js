@@ -55,7 +55,7 @@ const projects = [
     name: "Imba Studio",
     image: imbastudio,
     usedTechnologies: "REACT",
-    link: "https://clever-zabaione-9522a9.netlify.app",
+    link: "https://imba-studio.netlify.app",
     description: {
       en: "Imba Studio - PROFESSIONAL VIDEO and PHOTO editing team",
       ru: "Imba Studio - ПРОФЕССИОНАЛЬНАЯ команда монтажа ВИДЕО и ФОТО",
