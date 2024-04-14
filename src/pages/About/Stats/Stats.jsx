@@ -5,7 +5,7 @@ import { FaLanguage, FaHandshake, FaRegHeart } from "react-icons/fa";
 
 const Stats = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <section className="flex md:flex-row flex-col justify-center items-center gap-10 sm:gap-20 lg:gap-60">

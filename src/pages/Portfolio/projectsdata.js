@@ -1,17 +1,11 @@
-import classroomcoins from "./images/classroomcoins.png";
-import eshikoyna from "./images/eshikoyna.png";
-import imbastudio from "./images/imbastudio.png";
-import metallcenter from "./images/metallcenter.png";
-import netflix from "./images/netflix.png";
-import hackerrank from "./images/hackerrank.png";
-
 const projects = [
   {
     id: 1,
     start_date: "17.03.2024",
     end_date: "19.03.2024",
     name: "HackerRank",
-    image: hackerrank,
+    image:
+      "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/hackerrank.png",
     usedTechnologies: "REACT",
     link: "https://hacker-rank2.netlify.app",
     description: {
@@ -25,7 +19,8 @@ const projects = [
     start_date: "01.07.2023",
     end_date: "01.10.2023",
     name: "Classroom Coins",
-    image: classroomcoins,
+    image:
+      "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/classroomcoins.png",
     usedTechnologies: "REACT",
     link: "https://classroomcoins.uz",
     description: {
@@ -39,7 +34,7 @@ const projects = [
     start_date: "01.03.2023",
     end_date: "02.03.2023",
     name: "EshikOyna.uz",
-    image: eshikoyna,
+    image: "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/eshikoyna.png",
     usedTechnologies: "REACT",
     link: "https://eshik-oyna.netlify.app",
     description: {
@@ -53,7 +48,8 @@ const projects = [
     start_date: "01.04.2023",
     end_date: "03.04.2023",
     name: "Imba Studio",
-    image: imbastudio,
+    image:
+      "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/imbastudio.png",
     usedTechnologies: "REACT",
     link: "https://imba-studio.netlify.app",
     description: {
@@ -67,7 +63,7 @@ const projects = [
     start_date: "01.01.2023",
     end_date: "10.01.2023",
     name: "Netflix Clone",
-    image: netflix,
+    image: "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/netflix.png",
     usedTechnologies: "REACT",
     link: "https://hilarious-bubblegum-258d30.netlify.app/",
     description: {
@@ -81,7 +77,8 @@ const projects = [
     start_date: "01.06.2023",
     end_date: "01.07.2023",
     name: "Metall Center",
-    image: metallcenter,
+    image:
+      "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/metallcenter.png",
     usedTechnologies: "REACT",
     link: "https://metallcenter.uz",
     description: {

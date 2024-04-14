@@ -3,14 +3,12 @@ import { ThemeApi } from "../../context/themeContext";
 import BackBtn from "../../utils/BackBtn";
 import Heading from "../../utils/Heading";
 import ReactPlayer from "react-player/youtube";
-import thumbnail from "../../images/thumbnail.jpg";
-import thumbnail2 from "../../images/me2.jpg";
 import { Link } from "react-router-dom/dist";
 import { LocalizationApi } from "../../context/localizationContext";
 
 const Blog = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
   let text = {
     uz: "Mening Blogim",
     ru: "Мой Блог",
@@ -52,7 +50,7 @@ const Blog = () => {
           <ReactPlayer
             height={"498"}
             className="max-w-[350px] sm:max-w-xl lg:max-w-2xl h-96"
-            light={thumbnail}
+            light={"https://ik.imagekit.io/ekbcszw7tx/Portfolio/thumbnail.jpg"}
             url={"https://www.youtube.com/embed/hftggakTH-w"}
             controls
             playing
@@ -83,7 +81,9 @@ const Blog = () => {
           <ReactPlayer
             height={"498"}
             className="max-w-[350px] sm:max-w-xl lg:max-w-2xl h-96"
-            light={thumbnail2}
+            light={
+              "https://ik.imagekit.io/ekbcszw7tx/Portfolio/me2.jpg"
+            }
             url={"https://youtu.be/4Y1cpdriEj4"}
             controls
             playing

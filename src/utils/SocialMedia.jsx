@@ -7,7 +7,7 @@ const SocialMedia = () => {
   const { theme } = useContext(ThemeApi);
   return (
     <>
-      <Link to={"https://www.instagram.com/uzakoff_u/"} target="_blank">
+      <Link to={"https://www.instagram.com/uzakoff_u/"} target="_blank" rel="noreferrer">
         <button
           className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
             theme === "light" ? "border-dark1" : "border-light1"
@@ -15,7 +15,7 @@ const SocialMedia = () => {
           <FaInstagram className="w-6 h-6" />
         </button>
       </Link>
-      <Link to={"https://t.me/Uzakoff_u"} target="_blank">
+      <Link to={"https://t.me/Uzakoff_u"} target="_blank" rel="noreferrer">
         <button
           className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse animate-delay-[200ms] items-center hover:border-blue transform duration-300 ${
             theme === "light" ? "border-dark1" : "border-light1"
@@ -23,7 +23,7 @@ const SocialMedia = () => {
           <FaTelegram className="w-6 h-6" />
         </button>
       </Link>
-      <Link to={"https://github.com/UmarUzakoff"} target="_blank">
+      <Link to={"https://github.com/UmarUzakoff"} target="_blank" rel="noreferrer">
         <button
           className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse animate-delay-[400ms] items-center hover:border-blue transform duration-300 ${
             theme === "light" ? "border-dark1" : "border-light1"
@@ -35,7 +35,7 @@ const SocialMedia = () => {
         to={
           "https://www.linkedin.com/in/umarbek-uzoqov-a71921267/"
         }
-        target="_blank">
+        target="_blank" rel="noreferrer">
         <button
           className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse animate-delay-[600ms] items-center hover:border-blue transform duration-300 ${
             theme === "light" ? "border-dark1" : "border-light1"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { LocalizationApi } from "../context/localizationContext";
 
 const BackBtn = () => {
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <Link

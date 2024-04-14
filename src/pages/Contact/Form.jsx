@@ -1,15 +1,13 @@
 import React, { useContext, useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { LocalizationApi } from "../../context/localizationContext";
-// import { ThemeApi } from "../../context/themeContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaRegComment, FaRegEnvelope, FaRegUser } from "react-icons/fa";
 import Button from "../../utils/Button";
 
 const Form = () => {
-  // const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   ////-------------------LOADING--------------------
 

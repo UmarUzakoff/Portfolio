@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ThemeApi } from "../../context/themeContext";
 import { LocalizationApi } from "../../context/localizationContext";
-import { FaCalendarAlt, FaRegSun, FaRegUser } from "react-icons/fa";
+import { FaCalendarAlt, FaRegSun } from "react-icons/fa";
 import BackBtn from "../../utils/BackBtn";
 import Heading from "../../utils/Heading";
 import projects from "./projectsdata";
@@ -122,7 +122,7 @@ const ExactProject = () => {
                   href={project.link}
                   target={`_blank`}
                   className="text-blue font-thin text-sm mt-10 mb-2">
-                  {project.link == "https://classroomcoins.uz"
+                  {project.link === "https://classroomcoins.uz"
                     ? project.link
                     : project.link === "https://metallcenter.uz"
                     ? project.link

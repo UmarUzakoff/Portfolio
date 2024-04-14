@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
-import { FaCalendarAlt } from "react-icons/fa";
 import { LocalizationApi } from "../../../context/localizationContext";
 import { ThemeApi } from "../../../context/themeContext";
 
 const Languages = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <div>

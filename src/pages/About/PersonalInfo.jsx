@@ -5,7 +5,7 @@ import Button from "../../utils/Button";
 import resume from "./Resume/resume.pdf";
 
 const PersonalInfo = () => {
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   let text = {
     uz: "RESUMENI YUKLASH",

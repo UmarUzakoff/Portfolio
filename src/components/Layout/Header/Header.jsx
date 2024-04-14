@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
-// import { NavLink } from "react-router-dom";
 import { LocalizationApi } from "../../../context/localizationContext";
 import { ThemeApi } from "../../../context/themeContext";
-import moon from "../../../images/moon.svg";
-import sun from "../../../images/sun.svg";
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeApi);
@@ -26,7 +23,9 @@ const Header = () => {
           onClick={toggleTheme}>
           <img
             className="cursor-pointer"
-            src={theme === "dark" ? moon : sun}
+            src={`https://ik.imagekit.io/ekbcszw7tx/Portfolio/${
+              theme === "dark" ? "moon.svg" : "sun.svg"
+            }?w=100`}
             alt={theme === "dark" ? "moon" : "sun"}
           />
         </div>
@@ -48,4 +47,3 @@ const Header = () => {
 };
 
 export default Header;
-

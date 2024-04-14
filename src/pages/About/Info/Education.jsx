@@ -2,11 +2,10 @@ import React, { useContext } from "react";
 import { LocalizationApi } from "../../../context/localizationContext";
 import { ThemeApi } from "../../../context/themeContext";
 import { FaCalendarAlt } from "react-icons/fa";
-import ielts from "../Resume/IELTS.pdf";
 
 const Education = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <div>
@@ -32,7 +31,7 @@ const Education = () => {
           <a
             href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/82585443-d2d1-4a94-82d4-bb58a4d655d7.pdf"
             className="underline text-blue hover:text-sky-600"
-            target="_blank">
+            target="_blank" rel="noreferrer">
             {" "}
             {language === "uz"
               ? "Sertifikat"
@@ -85,7 +84,7 @@ const Education = () => {
             <a
             href="https://www.linkedin.com/feed/update/urn:li:activity:7117349074273472512/"
             className="underline text-blue hover:text-sky-600"
-            target="_blank">
+            target="_blank" rel="noreferrer">
             {language === "uz"
               ? "Sertifikat"
               : language === "ru"
@@ -121,7 +120,7 @@ const Education = () => {
           <a
             href="https://oneapp-uploads.s3.eu-north-1.amazonaws.com/608e4367-998a-4494-bbef-16a0cd04eac4.pdf"
             className="text-blue underline ml-2"
-            target="_blank">
+            target="_blank" rel="noreferrer">
             Proof
           </a>
         </span>
