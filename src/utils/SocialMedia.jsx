@@ -33,7 +33,7 @@ const SocialMedia = () => {
       </Link>
       <Link
         to={
-          "https://www.linkedin.com/in/muhammadumar-uzakov-%F0%9F%87%B5%F0%9F%87%B8-a71921267/"
+          "https://www.linkedin.com/in/umarbek-uzoqov-a71921267/"
         }
         target="_blank">
         <button
