@@ -34,16 +34,16 @@ const PersonalInfo = () => {
           <li className="flex flex-col gap-2 font-semibold">
             <span>
               {language === "uz"
-                ? "FAMILIYA:"
+                ? "ISM:"
                 : language === "ru"
-                ? "ФАМИЛИЯ: "
+                ? "ИМЯ: "
                 : "First Name: "}
             </span>
             <span>
               {language === "uz"
-                ? "ISM:"
+                ? "FAMILIYA:"
                 : language === "ru"
-                ? "ИМЯ: "
+                ? "ФАМИЛИЯ: "
                 : "Last Name: "}
             </span>
             <span>
@@ -66,22 +66,20 @@ const PersonalInfo = () => {
             <span>
               {" "}
               {language === "uz"
-                ? "Uzoqov"
-                : language === "ru"
-                ? "Узаков "
-                : "Uzoqov "}
-            </span>
-            <span>
-              {" "}
-              {language === "uz"
                 ? "Umarbek"
                 : language === "ru"
                 ? "Умарбек "
                 : "Umarbek "}
             </span>
             <span>
-              30.07.2004
+              {" "}
+              {language === "uz"
+                ? "Uzoqov"
+                : language === "ru"
+                ? "Узаков "
+                : "Uzoqov "}
             </span>
+            <span>30.07.2004</span>
             <span>
               {language === "uz"
                 ? "O'zbek"

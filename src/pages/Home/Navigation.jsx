@@ -5,7 +5,7 @@ import { LocalizationApi } from "../../context/localizationContext";
 
 const Navigation = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <section
@@ -18,7 +18,7 @@ const Navigation = () => {
         <ul className="flex sm:flex-row flex-col gap-7 justify-center items-center">
           <Link
             to={"/aboutMe"}
-            className={`font-bold sm:ml-5 sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transform transition duration-500 hover:scale-105 ${
+            className={`font-bold hover:shadow-xl sm:ml-5 sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transition duration-500 hover:scale-105 ${
               theme === "light"
                 ? "sm:bg-light1 bg-light2 text-dark1"
                 : "sm:bg-dark1 bg-dark2 text-light1"
@@ -37,7 +37,7 @@ const Navigation = () => {
           </Link>
           <Link
             to={`/myPortfolio`}
-            className={`font-bold sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transform transition duration-500 hover:scale-105 ${
+            className={`font-bold hover:shadow-xl sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transition duration-500 hover:scale-105 ${
               theme === "light"
                 ? "sm:bg-light1 bg-light2 text-dark1"
                 : "sm:bg-dark1 bg-dark2 text-light1"
@@ -56,7 +56,7 @@ const Navigation = () => {
           </Link>
           <Link
             to={`/contact`}
-            className={`font-bold sm:mr-5 sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transform transition duration-500 hover:scale-105 ${
+            className={`font-bold hover:shadow-xl sm:mr-5 sm:w-1/3 sm:h-64 w-5/6 py-3 rounded text-center flex justify-center items-center transition duration-500 hover:scale-105 ${
               theme === "light"
                 ? "sm:bg-light1 bg-light2 text-dark1"
                 : "sm:bg-dark1 bg-dark2 text-light1"

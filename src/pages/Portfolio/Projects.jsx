@@ -14,7 +14,7 @@ const MyProjects = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 100);
   }, []);
 
   return (
@@ -32,7 +32,7 @@ const MyProjects = () => {
               <Link
                 to={`/myPortfolio/${project.id}`}
                 key={project.id}
-                className={`rounded-lg bg-black/5 border-2 border-solid border-black/5 transition-all flex flex-col items-stretch justify-start ${
+                className={`rounded-lg bg-black/5 border-2 border-solid border-black/5 duration-500 hover:scale-105 flex flex-col items-stretch justify-start ${
                   theme === "light" ? "hover:bg-light1/50" : "hover:bg-dark1"
                 }`}
                 href="#">

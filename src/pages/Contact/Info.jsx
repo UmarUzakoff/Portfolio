@@ -3,18 +3,15 @@ import { LocalizationApi } from "../../context/localizationContext";
 import { ThemeApi } from "../../context/themeContext";
 import {
   FaEnvelope,
-  FaGithub,
   FaHome,
-  FaInstagram,
-  FaLinkedin,
   FaPhoneAlt,
   FaTelegram,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import SocialMedia from "../../utils/SocialMedia";
 
 const Info = () => {
   const { theme } = useContext(ThemeApi);
-  const { setLanguage, language } = useContext(LocalizationApi);
+  const { language } = useContext(LocalizationApi);
 
   return (
     <div
@@ -31,8 +28,8 @@ const Info = () => {
               ? "Номер телефона: "
               : "Phone: "}
           </span>
-          <span className="flex flex-row items-center gap-2 ">
-            <FaPhoneAlt />
+          <span className="flex flex-row items-center gap-2 group">
+            <FaPhoneAlt className="animate-wiggle-more animate-infinite animate-duration-1000 animate-ease-out" />
             <a href="tel:+998999938869">+998 99 993 88 69</a>
           </span>
         </li>
@@ -79,38 +76,7 @@ const Info = () => {
               : "SOCIAL PROFILES "}
           </span>
           <div className="flex flex-row gap-3 items-center justify-start">
-            <Link to={"https://www.instagram.com/uzakoff_u/"} target="_blank">
-              <button
-                className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
-                  theme === "light" ? "border-dark1" : "border-light1"
-                }`}>
-                <FaInstagram className="w-6 h-6" />
-              </button>
-            </Link>
-            <Link to={"https://t.me/Uzakoff_u"} target="_blank">
-              <button
-                className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
-                  theme === "light" ? "border-dark1" : "border-light1"
-                }`}>
-                <FaTelegram className="w-6 h-6" />
-              </button>
-            </Link>
-            <Link to={"https://github.com/UmarUzakoff"} target="_blank">
-              <button
-                className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
-                  theme === "light" ? "border-dark1" : "border-light1"
-                }`}>
-                <FaGithub className="w-6 h-6" />
-              </button>
-            </Link>
-            <Link to={"https://www.linkedin.com/in/umar-uzakov-a71921267"} target="_blank">
-              <button
-                className={`bg-transparent rounded-full w-10 h-10 hover:text-blue border-2 flex group justify-center animate-pulse items-center hover:border-blue transform duration-300 ${
-                  theme === "light" ? "border-dark1" : "border-light1"
-                }`}>
-                <FaLinkedin className="w-6 h-6" />
-              </button>
-            </Link>
+            <SocialMedia />
           </div>
         </li>
       </ul>
