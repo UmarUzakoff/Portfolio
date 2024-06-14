@@ -1,6 +1,21 @@
 const projects = [
   {
     id: 1,
+    start_date: "12.05.2024",
+    end_date: "01.07.2024",
+    name: "Smile Boutique",
+    image:
+      "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/smileboutique.png",
+    usedTechnologies: "REACT",
+    link: "https://smileboutique.uz",
+    description: {
+      en: "SmileBoutique.uz is a comprehensive dental care platform designed to provide detailed information about various dental services, the dental team, and patient experiences. The website features sections for different dental treatments, a gallery showcasing work examples, patient reviews, and video testimonials. With a user-friendly interface and detailed content, SmileBoutique.uz aims to help patients make informed decisions about their dental health. Explore the site to learn more about the services offered and view testimonials from satisfied patients.",
+      ru: "SmileBoutique.uz — это комплексная платформа для стоматологической помощи, предназначенная для предоставления подробной информации о различных услугах, команде стоматологов и опыте пациентов. Веб-сайт включает разделы с описанием различных стоматологических процедур, галерею с примерами работ, отзывы пациентов и видеоотзывы. С дружественным интерфейсом и детальным контентом, SmileBoutique.uz помогает пациентам принимать обоснованные решения о своем стоматологическом здоровье. Изучите наш сайт, чтобы узнать больше о предлагаемых услугах и ознакомиться с отзывами довольных пациентов.",
+      uz: "SmileBoutique.uz turli xil stomatologik xizmatlar, stomatologlar jamoasi va bemorlarning tajribasi haqida batafsil ma'lumot beradigan keng qamrovli stomatologik yordam platformasidir. Veb-saytda turli xil stomatologik davolash usullari, ishlar galereyasi, bemorlarning sharhlari va video guvohliklari bo'limlari mavjud. Foydalanuvchilarga qulay interfeys va batafsil mazmun bilan SmileBoutique.uz, bemorlarga stomatologik sog'lig'i haqida to'g'ri qarorlar qabul qilishga yordam beradi. Saytda taqdim etilayotgan xizmatlar haqida ko'proq ma'lumot olish va qoniqarli bemorlarning sharhlarini ko'rish uchun saytimizni o'rganishingiz mumkin.",
+    },
+  },
+  {
+    id: 2,
     start_date: "17.03.2024",
     end_date: "19.03.2024",
     name: "HackerRank",
@@ -15,7 +30,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     start_date: "01.07.2023",
     end_date: "01.10.2023",
     name: "Classroom Coins",
@@ -30,10 +45,10 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     start_date: "01.03.2023",
     end_date: "02.03.2023",
-    name: "EshikOyna.uz",
+    name: "EshikOyna",
     image: "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/eshikoyna.png",
     usedTechnologies: "REACT",
     link: "https://eshik-oyna.netlify.app",
@@ -44,7 +59,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     start_date: "01.04.2023",
     end_date: "03.04.2023",
     name: "Imba Studio",
@@ -56,20 +71,6 @@ const projects = [
       en: "Imba Studio - PROFESSIONAL VIDEO and PHOTO editing team",
       ru: "Imba Studio - ПРОФЕССИОНАЛЬНАЯ команда монтажа ВИДЕО и ФОТО",
       uz: "Imba Studio - PROFESSIONAL VIDEO va FOTO montaj jamoasi",
-    },
-  },
-  {
-    id: 5,
-    start_date: "01.01.2023",
-    end_date: "10.01.2023",
-    name: "Netflix Clone",
-    image: "https://ik.imagekit.io/ekbcszw7tx/Portfolio/projects/netflix.png",
-    usedTechnologies: "REACT",
-    link: "https://hilarious-bubblegum-258d30.netlify.app/",
-    description: {
-      en: "Netflix clone created using React.js and API",
-      ru: "Клон Netflix, созданный с использованием React.js и API.",
-      uz: "Netflix kloni React.js va API yordamida yaratilgan",
     },
   },
   {

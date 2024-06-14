@@ -33,9 +33,9 @@ const Intro = () => {
         </h1>
         <h4 className="sm:text-sm whitespace-nowrap text-center text-lg text-blue font-bold">
           {language === "uz"
-            ? "Fullstack dasturchi "
+            ? "Fullstack Web Dasturchi "
             : language === "ru"
-            ? "Fullstack-разработчик "
+            ? "Fullstack-веб-разработчик "
             : "Fullstack Web Developer "}
         </h4>
         <div className="mt-5 flex flex-row gap-3 items-center justify-center sm:justify-start">

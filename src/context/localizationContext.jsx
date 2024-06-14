@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const LocalizationApi = createContext({});
 
 const LocalizationProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("ru");
 
   return (
     <LocalizationApi.Provider value={{ language, setLanguage }}>

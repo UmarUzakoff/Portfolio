@@ -15,7 +15,7 @@ const Contact = () => {
   };
   return (
     <div
-      className={`w-full h-full ${
+      className={`w-full h-[100vh] ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">

@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <select
           onChange={onChange}
-          defaultValue={"en"}
+          defaultValue={"ru"}
           className={`${
             theme === "dark"
               ? "bg-dark1 text-light2 cursor-pointer"

@@ -31,7 +31,7 @@ const ExactProject = () => {
 
   return (
     <div
-      className={`w-full ${loading ? "h-[100vh]" : "h-full"} ${
+      className={`w-full h-[100vh] ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
@@ -125,6 +125,8 @@ const ExactProject = () => {
                   {project.link === "https://classroomcoins.uz"
                     ? project.link
                     : project.link === "https://metallcenter.uz"
+                    ? project.link
+                    : project.link === "https://smileboutique.uz"
                     ? project.link
                     : "https://project.netlify.app"}
                 </a>
