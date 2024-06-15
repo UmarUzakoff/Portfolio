@@ -16,7 +16,7 @@ const About = () => {
   };
   return (
     <div
-      className={`w-full h-[100vh] ${
+      className={`w-full h-full ${
         theme === "light" ? "bg-light1 text-dark1" : "bg-dark1 text-light1"
       }`}>
       <div className="container">
@@ -24,7 +24,7 @@ const About = () => {
         <Heading text={text} />
       </div>
       <div
-        className={`container sm:px-20 px-7 pt-5 pb-10 ${
+        className={`container sm:px-5 lg:px-20 px-7 pt-5 pb-10 ${
           theme === "light" ? "bg-light2 text-dark2" : "bg-dark2 text-light2"
         }`}>
         <PersonalInfo />

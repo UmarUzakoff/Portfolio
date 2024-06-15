@@ -22,7 +22,7 @@ const PersonalInfo = () => {
           ? "ЛИЧНАЯ ИНФОРМАЦИЯ "
           : "PERSONAL INFO "}
       </h4>
-      <p className="mt-5 text-xs sm:text-lg">
+      <p className="mt-5 text-sm sm:text-lg">
         {language === "uz"
           ? "Men Toshkent shahrida Fullstack Web Dasturchi sifatida ishlayman. Menda UI effektlari va yuqori sifatli web ilovalarni yaratishga bo'lgan kuchli istak bor."
           : language === "ru"

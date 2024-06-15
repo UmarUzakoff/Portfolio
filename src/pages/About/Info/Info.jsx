@@ -166,7 +166,7 @@ const Info = () => {
           className={`w-4/5 sm:h-[430px] rounded border ${
             activeTab === "experience"
               ? " "
-              : "sm:overflow-y-scroll sm:scrollbar-thin sm:scrollbar-thumb-gray-400 sm:scrollbar-track-gray-300"
+              : "sm:overflow-y-scroll sm:scrollbar-thin sm:scrollbar-thumb-blue sm:scrollbar-track-gray-300"
           } ${
             theme === "light"
               ? "border-dark2 opacity-60 border-t-0"

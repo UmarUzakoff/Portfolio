@@ -23,7 +23,7 @@ const Languages = () => {
             : "LANGUAGES I KNOW"}
         </h5>
       </div>
-      <div className="flex flex-col lg:flex-row xl:gap-10 items-center justify-start">
+      <div className="flex flex-col lg:flex-row xl:gap-10 items-start justify-start">
         <div>
           <div className="mx-5 mt-5 flex flex-col gap-3">
             <h6 className="font-bold text-lg md:text-2xl">
@@ -89,7 +89,7 @@ const Languages = () => {
             <hr className="w-40 h-1 my-1 bg-blue border-0 rounded"></hr>
           </div>
         </div>
-        <div>
+        <div className="w-full sm:w-fit">
           <div className="mx-5 mt-5 flex flex-col gap-3">
             <h6 className="font-bold text-lg md:text-2xl">
               {" "}
@@ -132,7 +132,7 @@ const Languages = () => {
             </span>
             <hr className="w-8 h-1 my-1 bg-blue border-0 rounded"></hr>
           </div>
-          <div className="mx-5 mt-5 flex flex-col gap-3">
+          <div className="mx-5 my-5 flex flex-col gap-3">
             <h6 className="font-bold text-lg md:text-2xl">
               {" "}
               {language === "uz"
